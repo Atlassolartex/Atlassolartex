@@ -1715,6 +1715,43 @@ document
 
 }
 
+/* CLOSE MENU WHEN LINK CLICKED */
+
+document.querySelectorAll('.mobile-menu a')
+.forEach(link => {
+
+link.addEventListener('click', () => {
+
+document
+.getElementById('mobileMenu')
+.classList.remove('active');
+
+});
+
+});
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener('click', function(event){
+
+const menu =
+document.getElementById('mobileMenu');
+
+const button =
+document.querySelector('.mobile-menu-btn');
+
+if(
+!menu.contains(event.target)
+&&
+!button.contains(event.target)
+){
+
+menu.classList.remove('active');
+
+}
+
+});
+
 </script>
 
 </body>
