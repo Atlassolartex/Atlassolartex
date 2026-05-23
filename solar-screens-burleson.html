@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solar Screens Burleson TX | Atlas Solar-Tex</title>
+
+<meta name="description" content="Custom solar screens in Burleson TX. Reduce heat, lower cooling costs, improve privacy, and protect your home from harsh Texas sun with Atlas Solar-Tex.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--gold:#F5A623;
+--blue:#1E8FFF;
+--dark:#05070A;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#05070A;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(16px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav-container{
+max-width:1500px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 40px;
+}
+
+.logo{
+width:180px;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:34px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+opacity:0.72;
+transition:0.3s ease;
+}
+
+.nav-links a:hover{
+color:var(--gold);
+opacity:1;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+position:relative;
+display:inline-block;
+}
+
+.dropbtn{
+background:none;
+border:none;
+color:white;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+opacity:0.72;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:8px;
+font-family:'Inter',sans-serif;
+transition:0.3s ease;
+}
+
+.dropbtn:hover{
+color:var(--gold);
+opacity:1;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+top:140%;
+left:0;
+background:#0b1017;
+min-width:240px;
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 0 24px rgba(0,0,0,.35);
+z-index:999;
+}
+
+.dropdown-content a{
+display:block;
+padding:14px 18px;
+color:#fff;
+text-decoration:none;
+transition:.25s;
+font-size:.9rem;
+letter-spacing:1px;
+opacity:1;
+}
+
+.dropdown-content a:hover{
+background:rgba(22,141,255,.12);
+color:var(--gold);
+}
+
+@media(min-width:769px){
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+}
+
+/* SOCIALS */
+
+.social-icons{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.social-icons a{
+width:44px;
+height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+color:white;
+font-size:18px;
+text-decoration:none;
+transition:0.3s ease;
+}
+
+.social-icons a:hover{
+transform:translateY(-4px);
+background:rgba(30,143,255,0.18);
+}
+
+/* PHONE */
+
+.phone-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 20px;
+background:rgba(245,166,35,0.10);
+border:1px solid rgba(245,166,35,0.25);
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-size:14px;
+font-weight:700;
+transition:0.3s ease;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu-btn{
+display:none;
+font-size:24px;
+color:white;
+cursor:pointer;
+}
+
+.mobile-menu{
+position:fixed;
+top:0;
+right:-100%;
+width:82%;
+height:100vh;
+background:#05070A;
+z-index:9999;
+padding:120px 30px 40px;
+display:flex;
+flex-direction:column;
+gap:24px;
+transition:0.35s ease;
+box-shadow:-10px 0 30px rgba(0,0,0,0.45);
+}
+
+.mobile-menu.active{
+right:0;
+}
+
+.mobile-menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.mobile-phone{
+margin-top:20px;
+padding:16px 20px;
+background:rgba(245,166,35,0.12);
+border:1px solid rgba(245,166,35,0.22);
+border-radius:14px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:100vh;
+display:flex;
+align-items:center;
+background-image:url("HERO.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,0.92) 0%,
+rgba(0,0,0,0.78) 40%,
+rgba(0,0,0,0.18) 100%
+);
+}
+
+.hero-content{
+position:relative;
+z-index:5;
+width:100%;
+max-width:1500px;
+margin:auto;
+padding:160px 50px 80px;
+}
+
+.hero-left{
+max-width:700px;
+}
+
+.hero-title{
+font-family:'Anton',sans-serif;
+line-height:0.86;
+text-transform:uppercase;
+}
+
+.hero-title span{
+display:block;
+}
+
+.gold{
+font-size:clamp(72px,8vw,155px);
+color:var(--gold);
+text-shadow:
+0 0 10px rgba(245,166,35,0.82),
+0 0 22px rgba(245,166,35,0.55),
+0 0 40px rgba(245,166,35,0.25);
+}
+
+.blue{
+font-size:clamp(72px,8vw,155px);
+color:var(--blue);
+text-shadow:
+0 0 10px rgba(30,143,255,0.82),
+0 0 22px rgba(30,143,255,0.55),
+0 0 40px rgba(30,143,255,0.25);
+}
+
+.silver{
+font-size:clamp(64px,7vw,130px);
+background:
+linear-gradient(
+180deg,
+#FFFFFF 0%,
+#D9E7F5 55%,
+#AFCFFF 100%
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-sub{
+margin-top:28px;
+margin-bottom:34px;
+font-size:18px;
+line-height:1.8;
+color:rgba(255,255,255,0.82);
+max-width:620px;
+}
+
+.hero-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:20px 34px;
+background:linear-gradient(135deg,#FFD04D,#F5A623);
+color:black;
+text-decoration:none;
+font-size:16px;
+font-weight:800;
+border-radius:14px;
+}
+
+/* CONTENT */
+
+.section{
+padding:120px 50px;
+}
+
+.section-header{
+text-align:center;
+margin-bottom:80px;
+}
+
+.section-header span{
+display:inline-block;
+margin-bottom:20px;
+color:var(--gold);
+font-size:13px;
+font-weight:700;
+letter-spacing:3px;
+}
+
+.section-header h2{
+font-family:'Anton',sans-serif;
+font-size:clamp(58px,7vw,120px);
+line-height:0.92;
+text-transform:uppercase;
+}
+
+.blue-text{
+color:var(--blue);
+}
+
+.benefit-grid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:28px;
+}
+
+.benefit-card{
+padding:48px 36px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(14px);
+border-radius:24px;
+transition:0.3s ease;
+}
+
+.benefit-card:hover{
+transform:translateY(-10px);
+border-color:rgba(30,143,255,0.22);
+}
+
+.benefit-card i{
+font-size:34px;
+margin-bottom:24px;
+color:var(--blue);
+}
+
+.benefit-card h3{
+margin-bottom:16px;
+font-size:24px;
+}
+
+.benefit-card p{
+line-height:1.8;
+opacity:0.75;
+}
+
+/* FOOTER */
+
+footer{
+padding:80px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.06);
+}
+
+.footer-logo{
+width:210px;
+margin-bottom:18px;
+}
+
+.footer-serving{
+font-size:15px;
+letter-spacing:2px;
+color:rgba(255,255,255,0.70);
+margin-bottom:28px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.phone-btn{
+display:none;
+}
+
+.mobile-menu-btn{
+display:block;
+}
+
+.social-icons{
+display:flex;
+align-items:center;
+gap:8px;
+margin-left:auto;
+margin-right:14px;
+}
+
+.social-icons a{
+width:36px;
+height:36px;
+font-size:14px;
+}
+
+.logo{
+width:130px;
+}
+
+.nav-container{
+padding:14px 16px;
+}
+
+.hero-content{
+padding:140px 20px 70px;
+}
+
+.benefit-grid{
+grid-template-columns:1fr;
+}
+
+.section{
+padding:90px 20px;
+}
+
+.hero-btn{
+width:100%;
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<img
+src="solarlogo.png"
+class="logo"
+alt="Atlas Solar-Tex"
+>
+
+<div class="nav-links">
+
+<div class="dropdown">
+
+<button class="dropbtn">
+SERVICE AREAS
+<i class="fas fa-chevron-down"></i>
+</button>
+
+<div class="dropdown-content">
+
+<a href="solar-screens-joshua.html">Joshua</a>
+
+<a href="solar-screens-burleson.html">Burleson</a>
+
+<a href="solar-screens-cleburne.html">Cleburne</a>
+
+<a href="solar-screens-granbury.html">Granbury</a>
+
+<a href="solar-screens-weatherford.html">Weatherford</a>
+
+</div>
+
+</div>
+
+<a href="index.html#benefits">BENEFITS</a>
+
+<a href="index.html#process">PROCESS</a>
+
+<a href="index.html#quote-form">CONTACT</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com/profile.php?id=100063526118827" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/atlas_solar_tex/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+</div>
+
+<div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+<a href="tel:8174473500" class="phone-btn">
+
+<i class="fa-solid fa-phone"></i>
+
+817-447-3500
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="solar-screens-joshua.html">Joshua</a>
+
+<a href="solar-screens-burleson.html">Burleson</a>
+
+<a href="solar-screens-cleburne.html">Cleburne</a>
+
+<a href="solar-screens-granbury.html">Granbury</a>
+
+<a href="solar-screens-weatherford.html">Weatherford</a>
+
+<a href="index.html#benefits">Benefits</a>
+
+<a href="index.html#process">Process</a>
+
+<a href="index.html#quote-form">Contact</a>
+
+<a href="tel:8174473500" class="mobile-phone">
+<i class="fas fa-phone"></i>
+817-447-3500
+</a>
+
+</div>
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<h1 class="hero-title">
+
+<span class="gold">BURLESON</span>
+
+<span class="silver">SOLAR</span>
+
+<span class="blue">SCREENS</span>
+
+<span class="silver">BUILT FOR</span>
+
+<span class="silver">TEXAS HEAT.</span>
+
+</h1>
+
+<p class="hero-sub">
+
+Burleson homeowners deal with brutal west-facing sun exposure and rising summer cooling costs every year. Atlas Solar-Tex custom solar screens help reduce indoor heat, improve energy efficiency, increase daytime privacy, and protect your home from harsh UV damage — without sacrificing curb appeal.
+
+</p>
+
+<a href="index.html#quote-form" class="hero-btn">
+
+GET MY FREE ESTIMATE
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-header">
+
+<span>BURLESON HOME PROTECTION</span>
+
+<h2>
+
+LOWER YOUR
+<span class="blue-text">
+ENERGY COSTS
+</span>
+
+THIS SUMMER
+
+</h2>
+
+</div>
+
+<div class="benefit-grid">
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-temperature-high"></i>
+
+<h3>BLOCK EXTREME HEAT</h3>
+
+<p>
+
+Burleson summers are relentless. Our premium solar screens help block intense sunlight before it enters your home, helping maintain cooler indoor temperatures throughout the day.
+
+</p>
+
+</div>
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>REDUCE COOLING BILLS</h3>
+
+<p>
+
+When your windows absorb direct sunlight, your HVAC system works overtime. Solar screens help reduce heat gain and improve cooling efficiency during peak Texas temperatures.
+
+</p>
+
+</div>
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-shield"></i>
+
+<h3>PROTECT YOUR INTERIOR</h3>
+
+<p>
+
+Reduce UV exposure that can fade flooring, furniture, blinds, and interior finishes over time while still maintaining airflow and visibility.
+
+</p>
+
+</div>
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-house"></i>
+
+<h3>CUSTOM BUILT FOR YOUR HOME</h3>
+
+<p>
+
+Every Atlas Solar-Tex screen is professionally measured and custom fabricated specifically for your Burleson home for maximum performance and clean aesthetics.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<img
+src="solarlogo.png"
+class="footer-logo"
+alt="Atlas Solar-Tex"
+>
+
+<div class="footer-serving">
+PROUDLY SERVING BURLESON & DFW
+</div>
+
+<p>
+© 2026 ATLAS SOLAR-TEX — BUILT FOR TEXAS HEAT
+</p>
+
+</footer>
+
+<script>
+
+function toggleMobileMenu(){
+
+document
+.getElementById("mobileMenu")
+.classList.toggle("active");
+
+}
+
+/* CLOSE MENU WHEN LINK CLICKED */
+
+document.querySelectorAll('.mobile-menu a')
+.forEach(link => {
+
+link.addEventListener('click', () => {
+
+document
+.getElementById('mobileMenu')
+.classList.remove('active');
+
+});
+
+});
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener('click', function(event){
+
+const menu =
+document.getElementById('mobileMenu');
+
+const button =
+document.querySelector('.mobile-menu-btn');
+
+if(
+!menu.contains(event.target)
+&&
+!button.contains(event.target)
+){
+
+menu.classList.remove('active');
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
