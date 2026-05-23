@@ -394,8 +394,7 @@ font-size:clamp(72px,8vw,155px);
 color:var(--gold);
 
 text-shadow:
-0 0 3px rgba(245,166,35,0.22),
-0 0 8px rgba(245,166,35,0.10);
+0 0 2px rgba(245,166,35,0.12);
 
 }
 
@@ -405,8 +404,7 @@ font-size:clamp(72px,8vw,155px);
 color:var(--blue);
 
 text-shadow:
-0 0 3px rgba(30,143,255,0.20),
-0 0 8px rgba(30,143,255,0.08);
+0 0 2px rgba(30,143,255,0.10);
 
 }
 
