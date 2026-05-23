@@ -1186,20 +1186,32 @@ text-align:center;
 
 @media(max-width:768px){
 
-/* REVIEWS MOBILE FIX */
+/* FORCE MOBILE WIDTH FIX */
 
-.reviews-grid{
-grid-template-columns:1fr !important;
-}
-
-.review-card{
-width:100%;
-max-width:100%;
-overflow:hidden;
-}
-
+html,
 body{
 overflow-x:hidden;
+max-width:100%;
+}
+
+section,
+div,
+.hero,
+.hero-content,
+.hero-left,
+.hero-title{
+max-width:100%;
+overflow-x:hidden;
+}
+
+.hero-title{
+width:100%;
+}
+
+.hero-title .gold,
+.hero-title .blue,
+.hero-title .silver{
+word-break:break-word;
 }
   
 /* MOBILE HERO FIX */
