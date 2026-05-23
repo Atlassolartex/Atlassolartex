@@ -1219,7 +1219,11 @@ overflow-wrap:break-word;
 }
 
 .nav-links{
-display:none;
+display:none !important;
+}
+
+.desktop-socials{
+display:none !important;
 }
 
 .social-icons{
