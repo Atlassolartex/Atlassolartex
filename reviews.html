@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Reviews | Atlas Solar-Tex</title>
+
+<meta name="description" content="See what Texas homeowners are saying about Atlas Solar-Tex solar screens. Real customer reviews from homeowners across DFW.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--gold:#F5A623;
+--blue:#1E8FFF;
+--dark:#05070A;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#05070A;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(16px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav-container{
+max-width:1500px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 40px;
+}
+
+.logo{
+width:180px;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:34px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+opacity:0.72;
+transition:0.3s ease;
+}
+
+.nav-links a:hover{
+color:var(--gold);
+opacity:1;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+position:relative;
+display:inline-block;
+}
+
+.dropdown::after{
+content:'';
+position:absolute;
+left:0;
+top:100%;
+width:100%;
+height:18px;
+}
+
+.dropbtn{
+background:none;
+border:none;
+color:white;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+opacity:0.72;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:8px;
+font-family:'Inter',sans-serif;
+transition:0.3s ease;
+}
+
+.dropbtn:hover{
+color:var(--gold);
+opacity:1;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+top:100%;
+padding-top:14px;
+left:0;
+min-width:240px;
+z-index:999;
+}
+
+.dropdown-inner{
+background:#0b1017;
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 0 24px rgba(0,0,0,.35);
+}
+
+.dropdown-content a{
+display:block;
+padding:14px 18px;
+color:#fff;
+text-decoration:none;
+transition:.25s;
+font-size:.9rem;
+letter-spacing:1px;
+opacity:1;
+}
+
+.dropdown-content a:hover{
+background:rgba(22,141,255,.12);
+color:var(--gold);
+}
+
+@media(min-width:769px){
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+}
+
+/* SOCIALS */
+
+.social-icons{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.social-icons a{
+width:44px;
+height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+color:white;
+font-size:18px;
+text-decoration:none;
+transition:0.3s ease;
+}
+
+.social-icons a:hover{
+transform:translateY(-4px);
+background:rgba(30,143,255,0.18);
+}
+
+/* PHONE */
+
+.phone-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 20px;
+background:rgba(245,166,35,0.10);
+border:1px solid rgba(245,166,35,0.25);
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-size:14px;
+font-weight:700;
+transition:0.3s ease;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu-btn{
+display:none;
+font-size:24px;
+color:white;
+cursor:pointer;
+}
+
+.mobile-menu{
+position:fixed;
+top:0;
+right:-100%;
+width:82%;
+height:100vh;
+background:#05070A;
+z-index:9999;
+padding:120px 30px 40px;
+display:flex;
+flex-direction:column;
+gap:24px;
+transition:0.35s ease;
+box-shadow:-10px 0 30px rgba(0,0,0,0.45);
+}
+
+.mobile-menu.active{
+right:0;
+}
+
+.mobile-menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.mobile-phone{
+margin-top:20px;
+padding:16px 20px;
+background:rgba(245,166,35,0.12);
+border:1px solid rgba(245,166,35,0.22);
+border-radius:14px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:90vh;
+display:flex;
+align-items:center;
+background-image:url("HERO.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,0.92) 0%,
+rgba(0,0,0,0.80) 42%,
+rgba(0,0,0,0.22) 100%
+);
+}
+
+.hero-content{
+position:relative;
+z-index:5;
+width:100%;
+max-width:1500px;
+margin:auto;
+padding:160px 50px 80px;
+}
+
+.hero-left{
+max-width:760px;
+}
+
+.hero-title{
+font-family:'Anton',sans-serif;
+line-height:0.86;
+text-transform:uppercase;
+}
+
+.hero-title span{
+display:block;
+}
+
+.gold{
+font-size:clamp(72px,8vw,155px);
+color:var(--gold);
+text-shadow:
+0 0 10px rgba(245,166,35,0.82),
+0 0 22px rgba(245,166,35,0.55),
+0 0 40px rgba(245,166,35,0.25);
+}
+
+.blue{
+font-size:clamp(72px,8vw,155px);
+color:var(--blue);
+text-shadow:
+0 0 10px rgba(30,143,255,0.82),
+0 0 22px rgba(30,143,255,0.55),
+0 0 40px rgba(30,143,255,0.25);
+}
+
+.silver{
+font-size:clamp(64px,7vw,130px);
+background:
+linear-gradient(
+180deg,
+#FFFFFF 0%,
+#D9E7F5 55%,
+#AFCFFF 100%
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-sub{
+margin-top:28px;
+margin-bottom:34px;
+font-size:18px;
+line-height:1.8;
+color:rgba(255,255,255,0.82);
+max-width:650px;
+}
+
+.hero-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:20px 34px;
+background:linear-gradient(135deg,#FFD04D,#F5A623);
+color:black;
+text-decoration:none;
+font-size:16px;
+font-weight:800;
+border-radius:14px;
+}
+
+/* STATS */
+
+.stats-bar{
+padding:34px 20px;
+background:#08111d;
+border-top:1px solid rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.stats-grid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:18px;
+}
+
+.stat-item{
+text-align:center;
+padding:20px;
+background:rgba(255,255,255,0.04);
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.06);
+}
+
+.stat-item i{
+font-size:22px;
+margin-bottom:12px;
+color:var(--gold);
+}
+
+.stat-item h3{
+font-size:15px;
+line-height:1.5;
+letter-spacing:1px;
+}
+
+/* REVIEWS */
+
+.reviews-section{
+padding:120px 50px;
+}
+
+.section-header{
+text-align:center;
+margin-bottom:80px;
+}
+
+.section-header span{
+display:inline-block;
+margin-bottom:18px;
+color:var(--gold);
+font-size:13px;
+font-weight:700;
+letter-spacing:3px;
+}
+
+.section-header h2{
+font-family:'Anton',sans-serif;
+font-size:clamp(56px,7vw,120px);
+line-height:0.92;
+text-transform:uppercase;
+}
+
+.blue-text{
+color:var(--blue);
+}
+
+.review-grid{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.review-card{
+padding:40px 34px;
+border-radius:24px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(14px);
+transition:0.3s ease;
+position:relative;
+overflow:hidden;
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+border-color:rgba(30,143,255,0.22);
+box-shadow:0 0 28px rgba(30,143,255,0.10);
+}
+
+.review-stars{
+margin-bottom:20px;
+color:var(--gold);
+font-size:18px;
+}
+
+.review-text{
+font-size:17px;
+line-height:1.9;
+color:rgba(255,255,255,0.84);
+margin-bottom:28px;
+}
+
+.review-author{
+font-size:15px;
+font-weight:700;
+letter-spacing:1px;
+color:var(--blue);
+}
+
+/* CTA */
+
+.cta-section{
+padding:120px 20px;
+text-align:center;
+background:
+linear-gradient(
+180deg,
+rgba(8,17,29,1) 0%,
+rgba(5,7,10,1) 100%
+);
+}
+
+.cta-section h2{
+font-family:'Anton',sans-serif;
+font-size:clamp(54px,7vw,120px);
+line-height:0.92;
+text-transform:uppercase;
+margin-bottom:24px;
+}
+
+.cta-section p{
+max-width:780px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+opacity:0.82;
+margin-bottom:42px;
+}
+
+.cta-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:22px 38px;
+background:linear-gradient(135deg,#FFD04D,#F5A623);
+color:black;
+text-decoration:none;
+font-size:17px;
+font-weight:800;
+border-radius:14px;
+}
+
+/* FOOTER */
+
+footer{
+padding:80px 20px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,0.06);
+}
+
+.footer-logo{
+width:210px;
+margin-bottom:18px;
+}
+
+.footer-serving{
+font-size:15px;
+letter-spacing:2px;
+color:rgba(255,255,255,0.70);
+margin-bottom:28px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.phone-btn{
+display:none;
+}
+
+.mobile-menu-btn{
+display:block;
+}
+
+.social-icons{
+display:flex;
+align-items:center;
+gap:8px;
+margin-left:auto;
+margin-right:14px;
+}
+
+.social-icons a{
+width:36px;
+height:36px;
+font-size:14px;
+}
+
+.logo{
+width:130px;
+}
+
+.nav-container{
+padding:14px 16px;
+}
+
+.hero-content{
+padding:140px 20px 70px;
+}
+
+.hero-btn,
+.cta-btn{
+width:100%;
+justify-content:center;
+}
+
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.reviews-section{
+padding:90px 20px;
+}
+
+.cta-section{
+padding:90px 20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<img
+src="solarlogo.png"
+class="logo"
+alt="Atlas Solar-Tex"
+>
+
+<div class="nav-links">
+
+<div class="dropdown">
+
+<button class="dropbtn">
+SERVICE AREAS
+<i class="fas fa-chevron-down"></i>
+</button>
+
+<div class="dropdown-content">
+
+<div class="dropdown-inner">
+
+<a href="solar-screens-joshua.html">Joshua</a>
+
+<a href="solar-screens-burleson.html">Burleson</a>
+
+<a href="solar-screens-cleburne.html">Cleburne</a>
+
+<a href="solar-screens-granbury.html">Granbury</a>
+
+<a href="solar-screens-weatherford.html">Weatherford</a>
+
+</div>
+
+</div>
+
+</div>
+
+<a href="reviews.html">REVIEWS</a>
+
+<a href="index.html#benefits">BENEFITS</a>
+
+<a href="index.html#process">PROCESS</a>
+
+<a href="index.html#quote-form">CONTACT</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com/profile.php?id=100063526118827" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/atlas_solar_tex/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+</div>
+
+<div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+<a href="tel:8174473500" class="phone-btn">
+
+<i class="fa-solid fa-phone"></i>
+
+817-447-3500
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- MOBILE MENU -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="reviews.html">Reviews</a>
+
+<a href="solar-screens-joshua.html">Joshua</a>
+
+<a href="solar-screens-burleson.html">Burleson</a>
+
+<a href="solar-screens-cleburne.html">Cleburne</a>
+
+<a href="solar-screens-granbury.html">Granbury</a>
+
+<a href="solar-screens-weatherford.html">Weatherford</a>
+
+<a href="index.html#benefits">Benefits</a>
+
+<a href="index.html#process">Process</a>
+
+<a href="index.html#quote-form">Contact</a>
+
+<a href="tel:8174473500" class="mobile-phone">
+<i class="fas fa-phone"></i>
+817-447-3500
+</a>
+
+</div>
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<h1 class="hero-title">
+
+<span class="gold">REAL RESULTS</span>
+
+<span class="silver">FROM REAL</span>
+
+<span class="blue">TEXAS</span>
+
+<span class="silver">HOMEOWNERS.</span>
+
+</h1>
+
+<p class="hero-sub">
+
+Homeowners across DFW trust Atlas Solar-Tex for professionally installed solar screens that reduce heat, lower energy costs, improve comfort, and upgrade curb appeal. Here’s what real customers are saying about their experience.
+
+</p>
+
+<a href="index.html#quote-form" class="hero-btn">
+
+GET MY FREE ESTIMATE
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats-bar">
+
+<div class="stats-grid">
+
+<div class="stat-item">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>4.4 STAR RATING</h3>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>13 VERIFIED GOOGLE REVIEWS</h3>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-temperature-high"></i>
+
+<h3>LOWER HEAT & GLARE</h3>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>REDUCE ENERGY COSTS</h3>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-shield"></i>
+
+<h3>BUILT FOR TEXAS SUN</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews-section">
+
+<div class="section-header">
+
+<span>REAL CUSTOMER FEEDBACK</span>
+
+<h2>
+
+WHY TEXAS
+<span class="blue-text">
+HOMEOWNERS
+</span>
+
+CHOOSE US
+
+</h2>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“Greg is an absolute delight to work with. The screens are very well made, the install went as smoothly as I could've hoped, and the company really is a delight. Cool and protect your biggest asset — you won’t regret it.”
+
+</p>
+
+<div class="review-author">
+— VERIFIED GOOGLE REVIEW
+</div>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“Best deal in town for solar screens. Atlas Solar-Tex did a great job installing solar screens on my house. The screens look really nice and the pricing was affordable.”
+
+</p>
+
+<div class="review-author">
+— SCOTT D
+</div>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“We love our new solar screens. We are saving a ton of money on our electric bill, the house stays much cooler, and our floors are no longer fading.”
+
+</p>
+
+<div class="review-author">
+— LESLIE ALEXANDER
+</div>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“I can’t say enough good things about Atlas Solar-Tex. They followed up consistently, worked with my schedule, and the final result looked fabulous. I couldn’t be happier.”
+
+</p>
+
+<div class="review-author">
+— JENNIFER MCGLOTHLIN
+</div>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“The screens look wonderful and make a huge difference with the heat. The quality was excellent and everything was installed professionally.”
+
+</p>
+
+<div class="review-author">
+— LESLIE MCFARLAND
+</div>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p class="review-text">
+
+“Professional service, quality installation, fair pricing, and a noticeably cooler home. Atlas Solar-Tex made the process simple from start to finish.”
+
+</p>
+
+<div class="review-author">
+— DFW HOMEOWNER
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta-section">
+
+<h2>
+
+READY TO
+<span class="blue-text">
+LOWER YOUR
+</span>
+
+ENERGY BILLS?
+
+</h2>
+
+<p>
+
+Get professionally measured and installed solar screens built specifically for Texas heat. Schedule your free estimate today and start cooling your home the smarter way.
+
+</p>
+
+<a href="index.html#quote-form" class="cta-btn">
+
+SCHEDULE MY FREE ESTIMATE
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</section>
+
+<footer>
+
+<img
+src="solarlogo.png"
+class="footer-logo"
+alt="Atlas Solar-Tex"
+>
+
+<div class="footer-serving">
+PROUDLY SERVING DFW & SURROUNDING AREAS
+</div>
+
+<p>
+© 2026 ATLAS SOLAR-TEX — BUILT FOR TEXAS HEAT
+</p>
+
+</footer>
+
+<script>
+
+function toggleMobileMenu(){
+
+document
+.getElementById("mobileMenu")
+.classList.toggle("active");
+
+}
+
+document.querySelectorAll('.mobile-menu a')
+.forEach(link => {
+
+link.addEventListener('click', () => {
+
+document
+.getElementById('mobileMenu')
+.classList.remove('active');
+
+});
+
+});
+
+document.addEventListener('click', function(event){
+
+const menu =
+document.getElementById('mobileMenu');
+
+const button =
+document.querySelector('.mobile-menu-btn');
+
+if(
+!menu.contains(event.target)
+&&
+!button.contains(event.target)
+){
+
+menu.classList.remove('active');
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
