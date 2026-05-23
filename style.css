@@ -1208,6 +1208,19 @@ overflow:hidden;
 overflow:hidden;
 }
 
+.hero-content{
+overflow:hidden;
+width:100%;
+}
+
+.hero-title{
+max-width:100%;
+overflow-wrap:break-word;
+}
+
+.nav-links{
+display:none;
+}
 
 .social-icons{
 
