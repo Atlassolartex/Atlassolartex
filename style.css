@@ -1186,6 +1186,22 @@ text-align:center;
 
 @media(max-width:768px){
 
+/* REVIEWS MOBILE FIX */
+
+.reviews-grid{
+grid-template-columns:1fr !important;
+}
+
+.review-card{
+width:100%;
+max-width:100%;
+overflow:hidden;
+}
+
+body{
+overflow-x:hidden;
+}
+  
 /* MOBILE HERO FIX */
 
 .hero-title .gold,
