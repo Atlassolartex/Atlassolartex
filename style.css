@@ -1284,3 +1284,129 @@ text-shadow:
 }
 
 }
+/* REVIEWS PAGE */
+
+.stats-bar{
+padding:34px 20px;
+background:#08111d;
+border-top:1px solid rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.stats-grid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:18px;
+}
+
+.stat-item{
+text-align:center;
+padding:20px;
+background:rgba(255,255,255,0.04);
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.06);
+}
+
+.stat-item i{
+font-size:22px;
+margin-bottom:12px;
+color:var(--gold);
+}
+
+.stat-item h3{
+font-size:15px;
+line-height:1.5;
+letter-spacing:1px;
+}
+
+.reviews-section{
+padding:120px 50px;
+}
+
+.review-grid{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.review-card{
+padding:40px 34px;
+border-radius:24px;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(14px);
+transition:0.3s ease;
+position:relative;
+overflow:hidden;
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+border-color:rgba(30,143,255,0.22);
+box-shadow:0 0 28px rgba(30,143,255,0.10);
+}
+
+.review-stars{
+margin-bottom:20px;
+color:var(--gold);
+font-size:18px;
+}
+
+.review-text{
+font-size:17px;
+line-height:1.9;
+color:rgba(255,255,255,0.84);
+margin-bottom:28px;
+}
+
+.review-author{
+font-size:15px;
+font-weight:700;
+letter-spacing:1px;
+color:var(--blue);
+}
+
+.cta-section{
+padding:120px 20px;
+text-align:center;
+background:
+linear-gradient(
+180deg,
+rgba(8,17,29,1) 0%,
+rgba(5,7,10,1) 100%
+);
+}
+
+.cta-section h2{
+font-family:'Anton',sans-serif;
+font-size:clamp(54px,7vw,120px);
+line-height:0.92;
+text-transform:uppercase;
+margin-bottom:24px;
+}
+
+.cta-section p{
+max-width:780px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+opacity:0.82;
+margin-bottom:42px;
+}
+
+.cta-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:22px 38px;
+background:linear-gradient(135deg,#FFD04D,#F5A623);
+color:black;
+text-decoration:none;
+font-size:17px;
+font-weight:800;
+border-radius:14px;
+}
