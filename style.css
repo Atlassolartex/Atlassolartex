@@ -390,28 +390,24 @@ display:block;
 
 .gold{
 
-font-size:
-clamp(72px,8vw,155px);
-
+font-size:clamp(72px,8vw,155px);
 color:var(--gold);
 
 text-shadow:
-0 0 10px rgba(245,166,35,0.82),
-0 0 22px rgba(245,166,35,0.55),
-0 0 40px rgba(245,166,35,0.25);
+0 0 6px rgba(245,166,35,0.38),
+0 0 12px rgba(245,166,35,0.18);
+
 }
 
 .blue{
 
-font-size:
-clamp(72px,8vw,155px);
-
+font-size:clamp(72px,8vw,155px);
 color:var(--blue);
 
 text-shadow:
-0 0 10px rgba(30,143,255,0.82),
-0 0 22px rgba(30,143,255,0.55),
-0 0 40px rgba(30,143,255,0.25);
+0 0 6px rgba(30,143,255,0.34),
+0 0 12px rgba(30,143,255,0.16);
+
 }
 
 .silver{
