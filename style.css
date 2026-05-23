@@ -1186,9 +1186,28 @@ text-align:center;
 
 @media(max-width:768px){
 
-.nav-links{
-display:none;
+/* MOBILE HERO FIX */
+
+.hero-title .gold,
+.hero-title .blue{
+font-size:clamp(52px,14vw,72px);
+line-height:0.9;
 }
+
+.hero-title .silver{
+font-size:clamp(48px,13vw,66px);
+line-height:0.9;
+}
+
+.hero-left{
+max-width:100%;
+overflow:hidden;
+}
+
+.hero{
+overflow:hidden;
+}
+
 
 .social-icons{
 
@@ -1278,6 +1297,7 @@ text-shadow:
 }
 
 }
+
 /* REVIEWS PAGE */
 
 .stats-bar{
