@@ -1194,14 +1194,18 @@ overflow-x:hidden;
 max-width:100%;
 }
 
-section,
-div,
+/* MOBILE OVERFLOW FIX */
+
 .hero,
 .hero-content,
-.hero-left,
-.hero-title{
+.hero-left{
 max-width:100%;
-overflow-x:hidden;
+}
+
+.reviews-grid,
+.review-card{
+max-width:100%;
+overflow:hidden;
 }
 
 .hero-title{
