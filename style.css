@@ -1497,3 +1497,9 @@ overflow-x:hidden;
 }
 
 }
+
+.logo-link{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
