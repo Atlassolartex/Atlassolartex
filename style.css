@@ -9,8 +9,8 @@ box-sizing:border-box;
 }
 
 :root{
---gold:#d9a92f;
---blue:#1f8fe5;
+--gold:#c9971f;
+--blue:#1679c9;
 --dark:#05070A;
 }
 
@@ -1326,23 +1326,19 @@ clamp(46px,8vw,80px);
 .blue-text{
 
 font-size:
-clamp(54px,9vw,90px);
+clamp(42px,8vw,72px);
 }
 
 .gold{
 
-text-shadow:
-0 0 5px rgba(245,166,35,0.85),
-0 0 10px rgba(245,166,35,0.45),
-0 0 18px rgba(245,166,35,0.14);
+text-shadow:none
+
 }
 
 .blue{
 
-text-shadow:
-0 0 5px rgba(30,143,255,0.85),
-0 0 10px rgba(30,143,255,0.45),
-0 0 18px rgba(30,143,255,0.14);
+text-shadow:none
+
 }
 
 }
