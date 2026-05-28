@@ -1359,13 +1359,13 @@ border-bottom:1px solid rgba(255,255,255,0.05);
 max-width:1400px;
 margin:auto;
 display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:18px;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
 }
 
 .stat-item{
 text-align:center;
-padding:20px;
+padding:16px 12px;
 background:rgba(255,255,255,0.04);
 border-radius:18px;
 border:1px solid rgba(255,255,255,0.06);
