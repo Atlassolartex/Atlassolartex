@@ -9,8 +9,8 @@ box-sizing:border-box;
 }
 
 :root{
---gold:#c9971f;
---blue:#1679c9;
+--gold:#d08a1f;
+--blue:#1d6fd1;
 --dark:#05070A;
 }
 
@@ -367,7 +367,7 @@ max-width:1200px;
 margin:0 auto;
 
 padding:
-140px 40px 80px 80px;
+140px 40px 80px 20px;
 }
 
 .hero-left{
