@@ -9,8 +9,8 @@ box-sizing:border-box;
 }
 
 :root{
---gold:#F5A623;
---blue:#1E8FFF;
+--gold:#d9a92f;
+--blue:#1f8fe5;
 --dark:#05070A;
 }
 
@@ -345,9 +345,9 @@ inset:0;
 background:
 linear-gradient(
 90deg,
-rgba(0,0,0,0.92) 0%,
-rgba(0,0,0,0.78) 40%,
-rgba(0,0,0,0.18) 100%
+rgba(0,0,0,0.58) 0%,
+rgba(0,0,0,0.38) 40%,
+rgba(0,0,0,0.10) 100%
 );
 }
 
