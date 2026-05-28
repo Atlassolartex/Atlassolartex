@@ -337,7 +337,6 @@ background-position:center;
 background-repeat:no-repeat;
 
 overflow:hiddne;
-
 }
 
 
@@ -363,12 +362,12 @@ z-index:5;
 
 width:100%;
 
-max-width:1500px;
+max-width:1200px;
 
-margin:auto;
+margin:0 auto;
 
 padding:
-160px 50px 80px;
+140px 40px 60px;
 }
 
 .hero-left{
