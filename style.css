@@ -1503,3 +1503,192 @@ overflow-x:hidden;
     align-items:center;
     text-decoration:none;
 }
+
+```css
+/* =========================
+PROJECTS PAGE
+========================= */
+
+/* HERO */
+
+.projects-hero{
+    position:relative;
+    min-height:100vh;
+    background:url('../black-exterior-solar-screens.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    overflow:hidden;
+}
+
+.projects-hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.75));
+}
+
+.projects-hero-content{
+    position:relative;
+    z-index:2;
+    max-width:720px;
+}
+
+.projects-hero h1{
+    font-size:6rem;
+    line-height:.92;
+    font-weight:900;
+    margin-bottom:28px;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+}
+
+.orange-text{
+    color:#f7a623;
+}
+
+.blue-text{
+    color:#00aaff;
+}
+
+.projects-hero p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#d0d0d0;
+    max-width:620px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:38px;
+    background:#f7a623;
+    color:#111;
+    text-decoration:none;
+    padding:18px 38px;
+    border-radius:12px;
+    font-weight:800;
+    transition:.3s ease;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+.projects-section{
+    padding:110px 8%;
+    background:#0d0d0f;
+}
+
+.section-header{
+    margin-bottom:60px;
+}
+
+.section-header h2{
+    font-size:3.2rem;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.section-header p{
+    color:#bdbdbd;
+    line-height:1.9;
+    max-width:760px;
+}
+
+/* GRID */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.project-card{
+    background:#151515;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.3s ease;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+.project-card img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+}
+
+.project-card-content{
+    padding:28px;
+}
+
+.project-card-content h3{
+    font-size:1.7rem;
+    margin-bottom:15px;
+}
+
+.project-card-content p{
+    color:#c8c8c8;
+    line-height:1.8;
+}
+
+/* CTA */
+
+.projects-cta{
+    padding:120px 8%;
+    background:#101010;
+    text-align:center;
+}
+
+.projects-cta h2{
+    font-size:4rem;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.projects-cta p{
+    max-width:720px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.9;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:40px;
+    background:#f7a623;
+    color:#111;
+    text-decoration:none;
+    padding:18px 42px;
+    border-radius:12px;
+    font-weight:900;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.projects-hero h1{
+    font-size:3.8rem;
+}
+
+.section-header h2{
+    font-size:2.4rem;
+}
+
+.projects-cta h2{
+    font-size:2.6rem;
+}
+
+.project-card img{
+    height:280px;
+}
+
+}
+```
