@@ -1532,4 +1532,19 @@ font-size:1.3rem;
 font-weight:700;
 margin-bottom:15px;
 color:#ffffff;
+
+.hero-stats{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:12px;
+
+}
+
+.stat-card{
+
+padding:18px 14px;
+
+}
 }
