@@ -335,7 +335,8 @@ url("HERO.png");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-}
+
+filter:brightness(1.12) contrast(.92) saturate(.92);
 
 .hero-overlay{
 
